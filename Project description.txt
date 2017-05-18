@@ -1,0 +1,39 @@
+This program works around the following math function:
+----------------------------------------------> F(x) = x^2 -4x +3
+It's a set of interesting and not-so-difficult excercises to
+learn the principles of Lambda expressions, functional
+programming and parallel processing in Java.
+The idea it is NOT of my own, it was given as practice at college
+therefore, some class and methods names are in spanish.
+
+******Point A:******
+Takes a list of 1000 points(Punto) generated with random x and y values,
+ order them by their X value, and obtains another list with new 
+points where F(x) = x^2 -4x +3 is applied on Y value.
+
+******Point B:******
+Over the same list of points, filters a new list with values
+where the rest between: point.GetX() >and< F(x) = x^2 -4x +3 
+is less than 10 -> Math.abs(x - (x*x - 4*x +3)) < 10.
+
+******Point c:******
+Calculates the centroid of all the points in the list.
+Centroid = new Point(averageXforAllPoints, averageYforAllPoints);
+
+******Point D:******
+Filters a new list of points where the euclidian distance between
+the centroid and the rest of the points is less than 10.
+
+*In mathematics, the Euclidean distance or Euclidean metric is the
+ "ordinary" straight-line distance between two points in 
+Euclidean space. 
+
+*Formula: Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+
+******Point E:******
+Calculate the density grade of the points.
+Density grade = 70 - averageOfEuclidianDistancesOfPreviousExc;
+
+******Point F:******
+Same as excercise E but with parallel processing. (You can see the
+effects with at least 10millions of points in the list).
