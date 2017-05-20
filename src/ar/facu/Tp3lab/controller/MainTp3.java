@@ -14,7 +14,7 @@ public class MainTp3 {
 		// TODO Auto-generated method stub
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 		PointFactory fabrica = new PointFactory();
-		fabrica.fillList(10000);
+		fabrica.fillList(50000000);
 		Solucion s = new Solucion();
 		Punto centroide = s.puntoC(fabrica.getPuntos());
 		//--------------PUNTO A------------//
